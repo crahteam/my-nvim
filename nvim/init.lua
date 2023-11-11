@@ -1,6 +1,11 @@
 -- open telescope fuzzy finder by CTRL-f
 vim.api.nvim_set_keymap('n', '<C-f>', '<cmd>Telescope find_files<CR>', { noremap = true, silent = true })
 
+-- indentation
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+
 -- enable line numbers
 vim.api.nvim_exec([[
   set number
